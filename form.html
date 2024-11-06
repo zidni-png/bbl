@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+        body {
+            font-family: Montserrat;
+            margin: 0;
+            padding: 0;
+            background-color: #252461;
+
+
+
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            color:white;
+        }
+      .logo img {
+          width: 100px; /* Adjust this value as needed */
+          height: auto; /* Maintain aspect ratio */
+      }
+      /* Style radio buttons and labels */
+      .radio-group {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .radio-group label {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+      }
+
+      .radio-group input[type="radio"] {
+          margin-right: 10px;
+      }
+
+      footer {
+          text-align: center;
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #ccc;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="image-removebg-preview (3).png" alt="Logo">
+    </div>
+    <h2>(Nama kelas)</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Harapan hadir di sesi ini:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Darimana anda mendapatkan info:</label>
+
+            <div>
+                <input type="radio" id="priority-low" name="priority" value="Low">
+                <label for="priority-low">Instagram</label>
+            </div>
+            <div>
+                <input type="radio" id="priority-medium" name="priority" value="Medium">
+                <label for="priority-medium">Facebook</label>
+            </div>
+            <div>
+                <input type="radio" id="priority-high" name="priority" value="High">
+                <label for="priority-high">Teman</label>
+            </div>
+            <div>
+                <input type="radio" id="priority-urgent" name="priority" value="Urgent">
+                <label for="priority-urgent">Wa Group</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="image">Bukti Transfer:</label>
+            <input type="file" id="image" name="image">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<footer>
+    <p>Made by BBL.</p>
+</footer>
+
+</body>
+</html>
